@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Calorie Counter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calorie Maintenance</h1>
+            <h2> Age:  <input type="number" id="ageInput" placeholder="Enter Age (Years)"></h2>
+            <h2> Weight:  <input type="number" id="weightInput" placeholder="Enter Weight (Pounds)"> </h2>
+            <h2> Height  <input type="number" id="feetInput" placeholder="Enter Height (Feet)"> 
+                Inches:  <input type="number" id="inchesInput" placeholder="Enter Height (Inches)"> </h2>
+            <h2>Maintenance Calories: <span id="maintenanceCalories">0</span></h2>
+            <button onClick="calculateCalories()">Calculate</button>
+        </div>
+     
+        <div class="container">
+            <h1>Daily Calorie Counter</h1>
+            <p id="date-display"></p>
+            <h2>Total: <span id="total">0</span></h2>
+            <h2>Remaining Calories <span id="difference">0</h2>
+            <input type="number" id="numberInput" placeholder="Enter calories">
+            <button onClick="addNumber()">Add</button>
+            <button onClick="resetSum()">Reset</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
